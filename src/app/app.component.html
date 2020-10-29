@@ -10,15 +10,18 @@
             [labels]="barChartLabels"
             [options]="barChartOptions"
             [legend]="barChartLegend"
+            [colors]= "barChartColors"
             [chartType]="barChartType">
       </canvas>
       <table class="table table-striped"  >
         <tr>
-          <th>Select to Vote</th>
+          <th>Click the button to Vote</th>
         </tr>
         <tr *ngFor="let item of pollObj.options"> 
-          <td>{{item.text}}</td> 
-          <td><button type="submit" class="btn btn-primary" (click)="onSelectVote(item.value)">Vote</button> </td> 
+          <td>{{item.text}}
+          <!-- <td>{{item.count}}</td> -->
+            <button type="submit" class="btn btn-primary" (click)="onSelectVote(item.value)">Vote</button> 
+          </td> 
         </tr>
       </table>
     </div>

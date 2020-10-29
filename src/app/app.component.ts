@@ -26,6 +26,19 @@ export class AppComponent {
   public barChartData = [
     {data: [], label: 'Votes'}
   ];
+  public barChartColors = [{
+    backgroundColor: [
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(255, 206, 86, 0.2)',
+      'rgba(0, 255, 0, 0.2)',
+      'rgba(102, 0, 204, 0.2)',
+      'rgba(255, 128, 0, 0.2)',
+      'rgba(0, 153, 153, 0.2)',
+      'rgba(255, 0, 0, 0.2)'
+
+    ]
+  }]
 
   ngOnInit() {
     this.listen2Events();

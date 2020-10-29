@@ -12,7 +12,7 @@ app.use("/", express.static(path.join(__dirname, "dist/week11")));
 let pollObj = {
     question: "Select Your Favourite Component",
     options: [
-      { text: "Angular", value: 0, count: 0 },
+      { text: "Angular", value: 0, count: 2 },
       { text: "MongoDB", value: 1, count: 0 },
       { text: "Express.js", value: 2, count: 0 },
       { text: "Golang", value: 3, count: 0 },
